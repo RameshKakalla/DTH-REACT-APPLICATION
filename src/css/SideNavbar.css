@@ -1,0 +1,75 @@
+.side-navbar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 240px;
+    height: calc(100vh - 70px);
+    background-color: #fff3e0; /* Light beige-orange tint */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* pushes logout down */
+    padding: 20px 15px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .sidebar-header {
+    text-align: center;
+    padding-bottom: 0px;
+    margin-top: 4%;
+  }
+  
+  .sidebar-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #f46b45;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;         /* <-- this makes nav-links fill the vertical space */
+    overflow-y: auto;     /* <-- in case of many links, scroll */
+    margin-top: 25%;        /* <-- remove big margin */
+  }
+  
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+    transition: background-color 0.25s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #fdd9c7;
+    color: #000;
+  }
+  
+  
+  .logout a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+    transition: background-color 0.25s ease;
+  }
+  
+  .logout a:hover {
+    background-color: #fdd9c7;
+    color: #000;
+  }
+  
+  .nav-icon {
+    font-size: 18px;
+  }

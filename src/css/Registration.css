@@ -1,0 +1,18 @@
+
+.ParentDiv{
+   width: 100%;
+}
+#reg{
+    position: absolute;
+    width: 84.3%;
+    height: 8%;
+    background-color: brown;
+    /* margin-top: 10%; */
+}
+.FormDiv{
+    position: absolute;
+    width: 84.3%;
+    height: 81%;
+    background-color: rgb(162, 140, 140);
+    margin-top: 3.8%;
+}

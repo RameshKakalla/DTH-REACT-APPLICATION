@@ -1,0 +1,158 @@
+/* Overlay full screen with semi-transparent background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding-left: 42%;
+  }
+  
+  /* White content box centered */
+  .overlay-content {
+    background-color: white;
+    padding: 40px 40px 30px;
+    border-radius: 8px;
+    width: 80vw;
+    max-width: 950px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Multi-column layout for the form */
+  .edit-form {
+    column-count: 2;
+    column-gap: 40px;
+  }
+  
+  /* Fieldset styling */
+  .edit-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px 15px 20px;
+    margin-bottom: 25px;
+    background-color: #fdfdfd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    break-inside: avoid;
+  }
+  
+  /* Legend styling for section headers like "Customer Profile", "Address", etc. */
+  .edit-form legend {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2a72d6;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #2a72d6;
+    background-color: #eef2fa;
+    border-radius: 4px;
+  }
+  
+  /* Nested fieldset (for Address) */
+  .nested-fieldset {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Form row: flex container for grouped inputs */
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  /* Individual input groups */
+  .form-group {
+    flex: 1 1 45%; /* two inputs per row */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .form-group input {
+    padding: 6px 10px;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    outline-offset: 2px;
+    transition: border-color 0.2s;
+  }
+  
+  .form-group input:focus {
+    border-color: #2a72d6;
+  }
+  
+  /* Buttons container */
+  .form-actions {
+    margin-top: 20px;
+    text-align: right;
+    column-span: all; /* spans both columns */
+  }
+  
+  /* Save and Cancel buttons */
+  .btn-save,
+  .btn-cancel {
+    padding: 8px 16px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-save {
+    background-color: #2a72d6;
+    color: white;
+  }
+  
+  .btn-save:hover {
+    background-color: #1a4e9c;
+  }
+  
+  .btn-cancel {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #999;
+  }
+  
+  /* Scrollbar for overlay if content is too tall */
+  .overlay-content::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .overlay-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 700px) {
+    .edit-form {
+      column-count: 1;
+    }
+  
+    .form-group {
+      flex: 1 1 100%;
+    }
+  }
+  .editText{
+    color: red;
+    margin-left: 31%;
+    margin-bottom: 2%;
+  }
