@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dth-application
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dth-application
+  template:
+    metadata:
+      labels:
+        app: dth-application
+    spec:
+      containers:
+        - name: dth-application
+          image: yourdockerhubusername/react-dth-app:latest
+          ports:
+            - containerPort: 80
